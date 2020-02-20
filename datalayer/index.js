@@ -6,4 +6,4 @@ module.exports = {
   readDog,
   createShelter,
   readShelter
-}
+};
