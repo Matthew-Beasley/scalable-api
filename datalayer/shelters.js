@@ -6,13 +6,13 @@ const createShelter = async ({ shelterName }) => {
   return data.rows;
 }
 
-const readShelter = async () => {
-  const sql = 'SELECT * FROM shelters RETURNING *';
+const readShelters = async () => {
+  const sql = 'SELECT * FROM shelters';
   const data = await client.query(sql);
   return data.rows;
 }
 
 module.exports = {
   createShelter,
-  readShelter
+  readShelters
 }
